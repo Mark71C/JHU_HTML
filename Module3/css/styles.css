@@ -1,0 +1,133 @@
+/* use Twitter Bootstrap CSS Framework as much as possible */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, sans-serif;
+}
+
+body {
+  background-color: #dddddd;
+}
+
+nav.navbar-default {
+  background-color: #74B9FF;
+  height: 80px;
+  padding-top: 15px;
+}
+
+div.container{
+  width: 100%;
+  padding: 0;
+  /* margin-left: 0px; */
+}
+
+/* nav.navbar-default.container{
+  width: 100%;
+} */
+
+
+.container>.navbar-header {
+  margin: 0;
+}
+
+.navbar-default .navbar-brand {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #222222;
+  /* margin-left: 15px; */
+  padding-left: 15px;
+}
+.navbar>.container{
+  margin-left: 0px;
+}
+
+.button-container {
+  /* margin-right: 15px; */
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #222222;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #222222;
+}
+
+.collapse-container {
+  margin-top: 12px;
+  background-color: #EEEEEE;
+}
+
+#bs-navbar-collapse ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-left: solid 3px black;
+  border-top: solid 3px black;
+  border-right: solid 3px black;
+}
+
+#bs-navbar-collapse ul li {
+  border-bottom: solid 3px black;
+  border-collapse: ;
+}
+
+#bs-navbar-collapse ul li a {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #444444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container {
+padding-left: 0;
+padding-right: 0;
+margin-left: 0;
+margin-right: 0;
+width: 100%;
+} */
+
+header {
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+  /* color: darkblue; */
+}
+
+
+@media (min-width: 992px) {
+  h3.sm {display: none;}
+  h3.xs {display: none;}
+  /* .lg-3 {width: 33.33%} */
+}
+
+@media (min-width: 768px) and (max-width:991px)  {
+  h3.md {display: none;}
+  h3.xs {display: none;}
+  /* .md-2 {width: 50%}
+  .md-1 {width: 100%} */
+}
+
+@media (min-width: 768px) {
+  .navbar>.container .navbar-brand{margin-left: 0px;} /* override bootstrap */
+}
+
+@media (max-width:767px)  {
+  h3.md {display: none;}
+  h3.sm {display: none;}
+  body {min-width: 300px;}
+}
