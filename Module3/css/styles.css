@@ -1,42 +1,45 @@
-/* use Twitter Bootstrap CSS Framework as much as possible */
-
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
   font-family: Verdana, sans-serif;
 }
 
 body {
-  background-color: #dddddd;
+  background-color: #fafafa;
+  min-width: 300px;
+}
+
+.navbar, .page-header{
+  border: none;
 }
 
 nav.navbar-default {
   background-color: #74B9FF;
-  height: 80px;
   padding-top: 15px;
+  min-height: 80px;
 }
 
 div.container{
   width: 100%;
   padding: 0;
-  /* margin-left: 0px; */
 }
 
-/* nav.navbar-default.container{
-  width: 100%;
-} */
+section {
+  /* background-color: #67E6DC; */
+  background-color: #95CCF7;
+  padding: 1px 10px;
+  margin: 0 0 20px 0;
+}
 
-
-.container>.navbar-header {
-  margin: 0;
+.container-fluid .row:nth-child(2) section {
+  background-color: #65ECF7;
+  /* background-color: #95CCF7; */
 }
 
 .navbar-default .navbar-brand {
   font-size: 3rem;
   font-weight: 900;
   color: #222222;
-  /* margin-left: 15px; */
+  margin-left: 15px;
   padding-left: 15px;
 }
 .navbar>.container{
@@ -44,7 +47,7 @@ div.container{
 }
 
 .button-container {
-  /* margin-right: 15px; */
+  margin-right: 15px;
 }
 
 .navbar-default .navbar-toggle {
@@ -79,55 +82,43 @@ div.container{
   color: #444444;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* .container {
-padding-left: 0;
-padding-right: 0;
-margin-left: 0;
-margin-right: 0;
-width: 100%;
-} */
-
 header {
-  text-align: center;
+  /* clear: both; */
   font-weight: bold;
+  margin-bottom: 30px;
 }
 
 h1 {
-  /* color: darkblue; */
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111111;
+  margin-top: 5px;
 }
 
 
 @media (min-width: 992px) {
-  h3.sm {display: none;}
-  h3.xs {display: none;}
+  /* small.sm {display: none;}
+  small.xs {display: none;} */
   /* .lg-3 {width: 33.33%} */
 }
 
 @media (min-width: 768px) and (max-width:991px)  {
-  h3.md {display: none;}
-  h3.xs {display: none;}
+  /* small.md {display: none;}
+  small.xs {display: none;} */
   /* .md-2 {width: 50%}
   .md-1 {width: 100%} */
 }
 
 @media (min-width: 768px) {
   .navbar>.container .navbar-brand{margin-left: 0px;} /* override bootstrap */
+  .container-fluid {margin-left:15px;margin-right:15px;}
 }
 
 @media (max-width:767px)  {
-  h3.md {display: none;}
-  h3.sm {display: none;}
-  body {min-width: 300px;}
+  /* small.md {display: none;}
+  small.sm {display: none;} */
 }
